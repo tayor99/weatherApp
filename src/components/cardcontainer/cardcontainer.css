@@ -1,0 +1,19 @@
+.card__container {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  background: var(--clr-primary);
+  background-repeat: no-repeat;
+  padding: 24px 24px;
+}
+
+@media screen and (max-width: 450px) {
+  .card__container {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius);
+    background: var(--clr-primary);
+    background-repeat: no-repeat;
+    padding: 15px 15px;
+  }
+}

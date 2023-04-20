@@ -1,0 +1,99 @@
+.forecast {
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+  gap: 32px;
+}
+
+.forecast__weather {
+  width: 50%;
+  height: 320px;
+}
+.forecast__weatherContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  background: var(--clr-primary-2);
+  background-repeat: no-repeat;
+  padding: 24px 24px;
+}
+.forecast__weatherHeader > h4 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+.forecast__weatherHeader > hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 8px;
+}
+
+.forecast__details {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+
+.forecast__humidity {
+  width: 50%;
+}
+
+.forecast__wind {
+  width: 50%;
+}
+
+.forecast__weatherbody {
+  margin-top: 25px;
+}
+
+.forecast__weatherDaily {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+/* .forecast__weatherDaily > img {
+  width: 20px;
+  height: 20px;
+} */
+.forecast__weatherDaily p {
+  font-weight: 500;
+  font-size: 1rem;
+
+  color: var(--clr-white);
+}
+
+.weather__range {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.weather__range > img {
+  height: 4px;
+  width: 130px;
+}
+@media screen and (max-width: 1150px) {
+  .forecast {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 765px) {
+  .forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+  .forecast__weather {
+    width: 100%;
+    height: 300px;
+  }
+  .forecast__details {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .weather__range > img {
+    height: 4px;
+    width: 80px;
+  }
+}

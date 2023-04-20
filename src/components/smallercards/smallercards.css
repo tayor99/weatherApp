@@ -1,0 +1,75 @@
+.smallerCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.smallerCard__header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.smallerCard__header > p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--clr-white-2);
+}
+.smallerCard__body > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.smallerCard__body > div > span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  /* identical to box height */
+
+  color: var(--clr-white);
+}
+.smallerCard__body > div > h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 24px;
+  color: var(--clr-white);
+}
+
+.smallerCard__body > p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-white);
+}
+
+.smallerCard__body > img {
+  margin-top: 32px;
+}
+
+.smallerCard__footer {
+  height: 100%;
+  display: flex;
+  /* justify-self: flex-end; */
+  align-items: flex-end;
+}
+
+.smallerCard__footer > p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--clr-white);
+}
+
+@media screen and (max-width: 500px) {
+  .smallerCard__body > h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 24px;
+    color: var(--clr-white);
+  }
+  .smallerCard__body > img {
+    width: 80.2px;
+    height: 70.85px;
+  }
+}
