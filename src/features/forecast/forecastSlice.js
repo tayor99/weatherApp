@@ -20,7 +20,7 @@ export const getForecastData = createAsyncThunk(
     try {
       const converted = thunkAPI.getState().weather.farenheit;
       const res = await axios.get(
-        `${baseUrl}forecast?q=${search}&appid=${apiKey}&units=${
+        `${baseUrl}/forecast?q=${search}&appid=${apiKey}&units=${
           converted ? "imperial" : "metric"
         }`
       );
