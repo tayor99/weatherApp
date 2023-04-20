@@ -1,4 +1,3 @@
-Weather App
 This is a simple weather app built using Create React App and the OpenWeatherMap API. The app allows users to search for the current weather conditions of any location in the world.
 
 Installation
